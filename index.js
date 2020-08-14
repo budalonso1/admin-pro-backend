@@ -18,6 +18,10 @@ app.use(cors());
 // connecion a la base de datos
 dbConnection();
 
+// Directorio publico
+app.use(express.static('public'));
+
+
 
 // Rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
